@@ -1,0 +1,601 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a>hamljs (v0.6.2)</a>
+</h1>
+<h4>Faster / Express compliant Haml implementation</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hamljs">module hamljs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.HamlError">
+            function <span class="apidocSignatureSpan">hamljs.</span>HamlError
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.HamlError.super_">
+            function <span class="apidocSignatureSpan">hamljs.</span>HamlError.super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.Parser">
+            function <span class="apidocSignatureSpan">hamljs.</span>Parser
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.compile">
+            function <span class="apidocSignatureSpan">hamljs.</span>compile
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.render">
+            function <span class="apidocSignatureSpan">hamljs.</span>render
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.renderFile">
+            function <span class="apidocSignatureSpan">hamljs.</span>renderFile
+            <span class="apidocSignatureSpan">(filename, encoding, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">hamljs.</span>errorContextLength</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hamljs.</span>Parser.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hamljs.</span>cache</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hamljs.</span>doctypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hamljs.</span>filters</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hamljs.</span>selfClosing</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">hamljs.</span>version</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hamljs.HamlError">module hamljs.HamlError</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.HamlError.HamlError">
+            function <span class="apidocSignatureSpan">hamljs.</span>HamlError
+            <span class="apidocSignatureSpan">(msg)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.HamlError.super_">
+            function <span class="apidocSignatureSpan">hamljs.HamlError.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hamljs.HamlError.super_">module hamljs.HamlError.super_</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.HamlError.super_.super_">
+            function <span class="apidocSignatureSpan">hamljs.HamlError.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.HamlError.super_.captureStackTrace">
+            function <span class="apidocSignatureSpan">hamljs.HamlError.super_.</span>captureStackTrace
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">hamljs.HamlError.super_.</span>stackTraceLimit</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hamljs.Parser">module hamljs.Parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.Parser.Parser">
+            function <span class="apidocSignatureSpan">hamljs.</span>Parser
+            <span class="apidocSignatureSpan">(str, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hamljs.Parser.prototype">module hamljs.Parser.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.Parser.prototype.buffer">
+            function <span class="apidocSignatureSpan">hamljs.Parser.prototype.</span>buffer
+            <span class="apidocSignatureSpan">(str, quoted)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">hamljs.Parser.prototype.</span>buf</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.hamljs.filters">module hamljs.filters</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.filters.cdata">
+            function <span class="apidocSignatureSpan">hamljs.filters.</span>cdata
+            <span class="apidocSignatureSpan">(str, buf)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.filters.javascript">
+            function <span class="apidocSignatureSpan">hamljs.filters.</span>javascript
+            <span class="apidocSignatureSpan">(str, buf)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.hamljs.filters.plain">
+            function <span class="apidocSignatureSpan">hamljs.filters.</span>plain
+            <span class="apidocSignatureSpan">(str, buf)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hamljs" id="apidoc.module.hamljs">module hamljs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.HamlError" id="apidoc.element.hamljs.HamlError">
+        function <span class="apidocSignatureSpan">hamljs.</span>HamlError
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HamlError = function (msg) {
+    this.name = 'HamlError'
+    this.message = msg
+    Error.captureStackTrace(this, HAML.render)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.HamlError.super_" id="apidoc.element.hamljs.HamlError.super_">
+        function <span class="apidocSignatureSpan">hamljs.</span>HamlError.super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Error() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.Parser" id="apidoc.element.hamljs.Parser">
+        function <span class="apidocSignatureSpan">hamljs.</span>Parser
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Parser = function (str, options) {
+  options = options || {}
+  this.tokens = tokenize(str)
+  this.xml = options.xml
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.compile" id="apidoc.element.hamljs.compile">
+        function <span class="apidocSignatureSpan">hamljs.</span>compile
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compile = function (str, options){
+  var parser = new Parser(str, options);
+  var fn = new Function('locals, attrs, escape, HAML', parser.js);
+  return function(locals){
+    return fn.apply(this, [locals, attrs, escape, HAML]);
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.render" id="apidoc.element.hamljs.render">
+        function <span class="apidocSignatureSpan">hamljs.</span>render
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (str, options) {
+  var parser,
+      options = options || {}
+  if (options.cache &amp;&amp; !options.filename)
+    throw new Error('filename option must be passed when cache is enabled')
+  return (function(){
+    try {
+      var fn
+      if (options.cache &amp;&amp; HAML.cache[options.filename])
+        fn = HAML.cache[options.filename]
+      else {
+        parser = new Parser(str, options)
+        fn = Function('locals, attrs, escape, HAML', parser.js)
+      }
+      return (options.cache
+          ? HAML.cache[options.filename] = fn
+          : fn).call(options.context, options.locals, attrs, escape, HAML)
+    } catch (err) {
+      if (parser &amp;&amp; err instanceof HamlError)
+        err.message = '(Haml):' + parser.peek.line + ' ' + err.message
+      else if (!(err instanceof HamlError))
+        err.message = '(Haml): ' + err.message
+      if (options.filename)
+        err.message = err.message.replace('Haml', options.filename)
+      throw err
+    }
+  }).call(options.context)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.renderFile" id="apidoc.element.hamljs.renderFile">
+        function <span class="apidocSignatureSpan">hamljs.</span>renderFile
+        <span class="apidocSignatureSpan">(filename, encoding, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">renderFile = function (filename, encoding, options, callback) {
+  var fs = require('fs');
+  options = options || {}
+  options.filename = options.filename || filename
+  options.cache = options.hasOwnProperty('cache') ? options.cache : true
+
+  if (HAML.cache[filename]) {
+    process.nextTick(function() {
+      callback(null, HAML.render(null, options))
+    });
+  } else {
+    fs.readFile(filename, encoding, function(err, str) {
+      if (err) {
+        callback(err)
+      } else {
+        callback(null, HAML.render(str, options))
+      }
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hamljs.HamlError" id="apidoc.module.hamljs.HamlError">module hamljs.HamlError</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.HamlError.HamlError" id="apidoc.element.hamljs.HamlError.HamlError">
+        function <span class="apidocSignatureSpan">hamljs.</span>HamlError
+        <span class="apidocSignatureSpan">(msg)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">HamlError = function (msg) {
+    this.name = 'HamlError'
+    this.message = msg
+    Error.captureStackTrace(this, HAML.render)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.HamlError.super_" id="apidoc.element.hamljs.HamlError.super_">
+        function <span class="apidocSignatureSpan">hamljs.HamlError.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Error() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hamljs.HamlError.super_" id="apidoc.module.hamljs.HamlError.super_">module hamljs.HamlError.super_</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.HamlError.super_.super_" id="apidoc.element.hamljs.HamlError.super_.super_">
+        function <span class="apidocSignatureSpan">hamljs.HamlError.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Error() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.HamlError.super_.captureStackTrace" id="apidoc.element.hamljs.HamlError.super_.captureStackTrace">
+        function <span class="apidocSignatureSpan">hamljs.HamlError.super_.</span>captureStackTrace
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function captureStackTrace() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hamljs.Parser" id="apidoc.module.hamljs.Parser">module hamljs.Parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.Parser.Parser" id="apidoc.element.hamljs.Parser.Parser">
+        function <span class="apidocSignatureSpan">hamljs.</span>Parser
+        <span class="apidocSignatureSpan">(str, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Parser = function (str, options) {
+  options = options || {}
+  this.tokens = tokenize(str)
+  this.xml = options.xml
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hamljs.Parser.prototype" id="apidoc.module.hamljs.Parser.prototype">module hamljs.Parser.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.Parser.prototype.buffer" id="apidoc.element.hamljs.Parser.prototype.buffer">
+        function <span class="apidocSignatureSpan">hamljs.Parser.prototype.</span>buffer
+        <span class="apidocSignatureSpan">(str, quoted)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">buffer = function (str, quoted) {
+  if (typeof quoted === 'undefined')
+    var quoted = true
+
+  if (quoted)
+    this.buf.push('  buf.push("' + str + '")')
+  else
+    this.buf.push('  buf.push(' + str + ')')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.hamljs.filters" id="apidoc.module.hamljs.filters">module hamljs.filters</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.filters.cdata" id="apidoc.element.hamljs.filters.cdata">
+        function <span class="apidocSignatureSpan">hamljs.filters.</span>cdata
+        <span class="apidocSignatureSpan">(str, buf)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cdata = function (str, buf) {
+  buf.push('&lt;![CDATA[\n' + str + '\n]]&gt;')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.filters.javascript" id="apidoc.element.hamljs.filters.javascript">
+        function <span class="apidocSignatureSpan">hamljs.filters.</span>javascript
+        <span class="apidocSignatureSpan">(str, buf)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">javascript = function (str, buf) {
+  buf.push('&lt;script type="text/javascript"&gt;\n//&lt;![CDATA[\n' + str + '\n//]]&gt;&lt;/script&gt;')
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.hamljs.filters.plain" id="apidoc.element.hamljs.filters.plain">
+        function <span class="apidocSignatureSpan">hamljs.filters.</span>plain
+        <span class="apidocSignatureSpan">(str, buf)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">plain = function (str, buf) {
+  buf.push(str)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
